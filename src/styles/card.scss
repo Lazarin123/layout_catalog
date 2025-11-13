@@ -4,18 +4,41 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .card {
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
   width: 200px;
   border-radius: 5px;
   border: 1px solid $border-color;
   text-align: center;
   padding: $spacing-base;
+  padding-top: 32px;
 
   .card__image {
+    background-image: url(../images/imac.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 160px;
+    min-height: 134px;
     margin-bottom: 40px;
+  }
+
+  .card__text-tittle {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    color: #060b35;
+  }
+
+  .card__text-paragraph {
+    font-size: 10px;
+    line-height: 14px;
+    color: $secondary-font-color;
   }
 
   .card__text-tittle,
@@ -23,7 +46,6 @@
     text-align: left;
     letter-spacing: 0;
     margin-top: 0;
-    margin-bottom: 4px;
   }
 
   &__review {
